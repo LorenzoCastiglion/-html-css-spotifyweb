@@ -49,26 +49,65 @@ main{
 }
 
 .nav{
-    width: 250px;
-    background-color: red;
+    width: 300px;
+    background-color: var(--nero-100);
     min-height: 80%;
     color: var(--text-white);
 }
 
 .wrapper-nav{
+    color: var(--text-grey);
     height: calc(100% - 95px);
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .logo-container{
-    padding: 0.8rem;
+    padding: 1rem;
+}
+
+.logo-container img{
+    height: 4rem;
+}
+
+/* navtop */
+
+.icone-top{
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-right: 2.5rem;
+    
+}
+
+
+.playlist h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+#add-song{
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    line-height: 32px;
+}
+
+#add-song p{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fa-plus-square{
+    vertical-align: middle;
+    font-size: 3rem;
+    margin-right: 1rem;
 }
 
 .playlist-container{
-    height: 600px;
+    height: 530px;
     overflow-y: scroll;
 }
 
@@ -78,11 +117,24 @@ main{
 
 }
 
+.nav-down-fixed{
+    
+    line-height: 3rem;
+    position: sticky;
+    bottom: 95px;
+    background-color: var(--nero-100);
+}
+
+#nome-user{
+    font-size: 1.2rem;
+    color: var(--text-white);
+}
+
 
 /* layout-destra */
 
 .browse{
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
     background-color: var(--deep-blue);
     overflow-y: scroll;
     color: white;
