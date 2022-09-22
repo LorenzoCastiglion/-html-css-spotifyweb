@@ -76,8 +76,8 @@ main{
 }
 
 
-
 .logo-container img{
+    
     height: 3.5rem;
     margin-top: 1.5rem;
     margin-left: 2rem;
@@ -208,6 +208,7 @@ main{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.321);
+    z-index: 500;
 }
 
 .top-bar-browse a:hover{
@@ -238,7 +239,8 @@ main{
 }
 
 .browse-nav-bar a:hover{
-    border-bottom: 1px solid var(--lime-green);
+    border-bottom: 2px solid var(--lime-green);
+    color: var(--text-white);
     
 }
 
@@ -253,7 +255,7 @@ main{
 }
 
 .recent-song{
-    
+    flex-flow: row wrap;
     display: flex;
     justify-content: flex-start;
     
@@ -283,6 +285,7 @@ main{
 }
 
 .play-btn i{
+    color: var(--lime-green);
     position: absolute;
     top: calc(50% - 1rem);
     left: calc(50% - 1rem);
@@ -379,9 +382,10 @@ h4{
 }
 
 .inner-control-bar-dx {
+    padding-left: 1rem;
     align-items: center;
     flex-basis: 25%;
-    gap: 25px;
+    gap: 1rem;
     justify-content: flex-end;
 }
 
@@ -413,6 +417,7 @@ h4{
 .time-bar {
     align-items: center;
     font-weight: 600;
+    font-size: 0.5rem;
     width: 100%;
 }
 
@@ -434,6 +439,10 @@ h4{
     width: 25%;
     border-radius: 20px 0 0 20px;
 }
+
+
+
+
 
 .inner-control-bar-dx i {
     font-size: 1rem;
@@ -457,3 +466,17 @@ h4{
     border-radius: 20px 0 0 20px;
 }
 
+
+@media screen and (max-width: 992px) {
+    .flex-browse{
+        width: calc(100% / 4);
+       margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-browse{
+        width: calc(100% / 2);
+       margin-bottom: 1rem;
+    }
+}
