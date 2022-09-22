@@ -26,8 +26,8 @@
             <div class="nav">
 
                 <div class="logo-container">
-                    <img src="./img/logo.svg" alt="">
-
+                    <img class="none" src="./img/logo.svg" alt="">
+                    <img class="logo-small" src="./img/logo-small.svg" alt="">
                 </div>
 
                 <!-- menu destro -->
@@ -35,15 +35,15 @@
 
                     <div class="menu-left">
 
-                        <div class="top-nav-bar"><i class="fa-solid fa-house icone-top"></i><a href="#">Home</a></div>
-                        <div class="top-nav-bar"><i class="fa-solid fa-magnifying-glass icone-top"></i><a
+                        <div class="top-nav-bar"><i class="fa-solid fa-house icone-top"></i><a class="none" href="#">Home</a></div>
+                        <div class="top-nav-bar"><i class="fa-solid fa-magnifying-glass icone-top"></i><a class="none"
                                 href="#">Cerca</a></div>
-                        <div class="top-nav-bar"><i class="fa-solid fa-lines-leaning icone-top"></i><a href="#">La tua
+                        <div class="top-nav-bar"><i class="fa-solid fa-lines-leaning icone-top"></i><a class="none" href="#">La tua
                                 libreria</a></div>
 
                     </div>
 
-                    <div class="playlist">
+                    <div class="playlist none">
 
                         <h2>playlist</h2>
 
@@ -84,13 +84,13 @@
                     </div>
 
                     <div class="nav-down-fixed">
-                        <div><i class="fa-fw select-all far"></i> Install app
+                        <div><i class="fa-fw select-all far"></i> <span class="none">Install app</span>
                         </div>
 
-                        <hr>
+                        <hr class="none">
 
                         <div id="nome-user">
-                            <i class="fa-fw select-all far"></i> <strong>Jhon Doe</strong>
+                            <i class="fa-fw select-all far"></i><span class="none"> <strong>Jhon Doe</strong></span>
                         </div>
 
                     </div>
@@ -316,7 +316,7 @@
        
         <footer class="player-bar">
             <div class="inner-control-bar d-flex">
-                <div class="inner-control-bar-sx d-flex">
+                <div class="inner-control-bar-sx d-flex none">
                     <img src="./img/sinister.jpeg" alt="Sinister">
                     <div>
                         <h3>Sinister</h3>
@@ -335,7 +335,7 @@
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
-                    <div class="time-bar d-flex">
+                    <div class="time-bar d-flex ">
                         <span>0:25</span>
                         <div class="bar"></div>
                         <span>4:35</span>
@@ -345,7 +345,7 @@
                     <i class="fas fa-list"></i>
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
-                    <div class="vol"></div>
+                    <div class="vol none"></div>
                 </div>
             </div>
         </footer>

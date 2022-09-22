@@ -83,6 +83,10 @@ main{
     margin-left: 2rem;
 }
 
+.logo-small{
+   display: none; 
+}
+
 /* navtop */
 
 .menu-left{
@@ -144,7 +148,10 @@ main{
     height: 350px;
     overflow-y: scroll;
     scrollbar-width: thin;
-   
+}
+
+.playlist h2{
+    color: var(--text-white);
 }
 
 .playlist-name{
@@ -358,6 +365,7 @@ h4{
     color: var(--text-white);
     height: 95px;
     z-index: 1000;
+    width: 100%;
 }
 
 .inner-control-bar {
@@ -467,6 +475,9 @@ h4{
 }
 
 
+
+
+
 @media screen and (max-width: 992px) {
     .flex-browse{
         width: calc(100% / 4);
@@ -480,3 +491,103 @@ h4{
        margin-bottom: 1rem;
     }
 }
+
+@media screen and (max-width: 576px) {
+
+    .browse-container{
+        width: calc(100% - 20px);
+    }
+    
+    .none{
+        display:none;
+    }
+
+    .top-bar-browse{
+        justify-content: center;
+    }
+
+    .browse-nav-bar{
+        justify-content: space-between;
+        
+    }
+
+    .top-bar-browse a{
+        margin: 0;
+    }
+
+    .logo-small{
+        display: block;
+        width: 30px;
+    }
+
+    .logo-container img{
+        margin-left: 1rem;
+    }
+
+    .menu-left i{
+        padding-left: 1rem;
+    }
+
+    
+
+    .nav{
+        width: 10%;
+    }
+    
+    
+    .flex-browse{
+        width: calc(100% / 2);
+       margin-bottom: 1rem;
+    }
+
+    .nav-down-fixed{
+        width: 10%;
+        padding-left: 1rem;
+        font-size: 20px;
+        
+    }
+
+
+    .control-bar {
+        height: 200px;
+    }
+
+    .inner-control-bar {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .control{
+        font-size: 10px;
+    }
+
+    .fa-play-circle{
+        font-size: 30px;
+    }
+
+   
+
+    .inner-control-bar-dx {
+        padding-top: 10px;
+        padding-left: 1.5rem; 
+    }
+
+    .inner-control-bar-dx i{
+        font-size: 12px;
+    }
+
+
+
+    
+    .inner-content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: calc(100vh - 180px);
+    }
+   
+
+
+
+}
+
