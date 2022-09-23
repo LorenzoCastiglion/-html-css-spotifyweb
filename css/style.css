@@ -220,6 +220,11 @@ main{
 
 .top-bar-browse a:hover{
     transform: scale(1.1); 
+    color: var(--nero-100);
+    background-color: var(--lime-green);
+    -webkit-box-shadow: inset 0px 0px 14px 7px #000000; 
+    box-shadow: inset 0px 0px 14px 5px #000000;
+
 }
 /* ------- */
 
@@ -309,6 +314,12 @@ main{
     transform: scale(1.1);
    
 }
+
+.flex-browse:hover {
+    color: var(--lime-green);
+}
+
+
 
 
 .cover{
@@ -553,7 +564,7 @@ h4{
     }
 
     .inner-control-bar {
-        flex-direction: column-reverse;
+        flex-direction: row;
         justify-content: center;
         gap: 10px;
     }
@@ -570,11 +581,13 @@ h4{
 
     .inner-control-bar-dx {
         padding-top: 10px;
-        padding-left: 1.5rem; 
+        padding-left: 0; 
+        flex-direction: column;
     }
 
     .inner-control-bar-dx i{
         font-size: 12px;
+        
     }
 
 
