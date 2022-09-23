@@ -7,7 +7,7 @@
 --text-white: rgba(255, 255, 255, 1);
 --text-grey: rgba(113, 113, 113, 1);
 --lime-green: rgba(173, 255, 47, 1);
---light-grey:rgb(206, 198, 198);
+--light-grey:rgb(226, 226, 226);
 --blue: #2875DE;
 
 
@@ -34,6 +34,7 @@ body{
 /* font e pesi */
 
     h6{
+        color: var(--nero-100);
         font-weight: 200;
     }
 
@@ -68,6 +69,7 @@ header{
 .col-flex{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
@@ -114,6 +116,10 @@ nav{
     padding: 2rem 0;
 }
 
+.benefits{
+    padding: 2rem 0;
+}
+
 .benefit img{
     width: 30%;
     padding: 1rem;
@@ -128,4 +134,46 @@ nav{
 
 /* ******************* */
 
+
+/* section 2 */
+
+.which-premium{
+    background-color: var(--light-grey);
+    padding: 2rem 0;
+}
+
+.cards{
+    width: 100%;
+}
+
+.card{
+    margin: 2rem 0;
+    background-color: var(--text-white);
+    -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: inherit;
+    
+    
+}
+
+#termini-card {
+    color: var(--nero-100);
+    text-decoration: underline;
+}
+
+/* ******************* */
+
+
+/* footer */
+
+footer{
+    background-color: var(--nero-100);
+    height: 100px;
+}
+
+
+
+/* ******************* */
 
