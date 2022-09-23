@@ -30,6 +30,21 @@ body{
     text-decoration: none;
 }
 
+
+/* font e pesi */
+
+    h6{
+        font-weight: 200;
+    }
+
+    h4{
+        font-weight: 400;
+    }
+
+
+
+/* +++++++++++++ */
+
 *a{
     color: var(--text-white);
 }
@@ -47,6 +62,13 @@ header{
 .d-flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 nav div ul {
@@ -63,15 +85,47 @@ nav ul li a{
 nav{
     background-color: var(--nero-100);
     height: 100px;
-    padding-top: 2rem;
+    padding: 1rem 0;
 }
 
 .logo {
-    width: 200px;
+    width: 10rem;
 }
 
 .hero{
     background-color: var(--blue) ;
 }
+
+.hero-content{
+    padding: 1.5rem 0;
+}
+
+#termini-top{
+    color: var(--text-white);
+    text-decoration: underline;
+}
+
+
+/* main  */
+
+/* section 1 */
+
+.why-premium{
+    padding: 2rem 0;
+}
+
+.benefit img{
+    width: 30%;
+    padding: 1rem;
+}
+
+.benefit-txt{
+    flex-basis: 70%;
+    align-self: center;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+}
+
+/* ******************* */
 
 
